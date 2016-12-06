@@ -15,11 +15,11 @@ class TicTacToe:
         self.prompt()
         
     def record_to_board(self):
-        self.convert = ['1','2','3']
+        self.convert = []
         for i in range(0, 7, 3):
             line = self.record[i:i+3]
             index = i//3
-            self.convert[index] = " ".join(line)
+            self.convert.append(" ".join(line))
           
         self.board = "\n".join(self.convert)
 
